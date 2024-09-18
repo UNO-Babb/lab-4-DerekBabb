@@ -36,22 +36,22 @@ def squaresInSquares(myTurtle, num):
     for i in range(num):
         drawSquare(myTurtle, size)
         size = size + 20
+        myTurtle.up()
         myTurtle.right(180)
         myTurtle.forward(10)
         myTurtle.right(90)
         myTurtle.forward(10)
         myTurtle.right(90)
+        myTurtle.down()
 
 def main():
     myTurtle = turtle.Turtle()
     
     #drawSquare(myTurtle, 100)
-
     #drawPolygon(myTurtle, 5) #draws a pentagon
    
-
     #fillCorner(myTurtle, 3) #draws a square with top right corner filled in.
-    #fillCorner(myTurtle, 3) #draws a square bottom left corner filled in.
+    #fillCorner(myTurtle, 4) #draws a square bottom left corner filled in.
 
     squaresInSquares(myTurtle, 5) #draws 5 concentric squares
     #squaresInSquares(myTurtle, 3) #draws 3 concentric squares
